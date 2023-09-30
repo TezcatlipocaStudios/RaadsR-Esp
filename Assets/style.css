@@ -1,0 +1,151 @@
+:root{
+    --palette-1: #03001C;
+    --palette-2: #0F082F;
+    --palette-3: #1A0F42;
+    --palette-4: #301E67;
+    --palette-5: #465790;
+    --palette-6: #5B8FB9;
+    --palette-7: #89BDCA;
+    --palette-8: #B6EADA;
+    --shadow: #000;
+}
+@font-face {
+    font-family: urlstylefont;
+    src: url("Handmade.otf");
+}
+html{
+    padding: 20px;
+    background-color: var(--palette-1);
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--palette-8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navigationlink{
+    color: var(--palette-8);
+    font-size: 1.8em;
+    font-family: urlstylefont;
+    border: 2px solid var(--palette-7);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--palette-1);
+    box-shadow: 10px 5px 5px var(--shadow);
+}
+.navigationlink:hover{
+    background-color: var(--palette-2);
+    border: 2px solid var(--palette-6);
+    color: var(--palette-7);
+    font-size: 2em;
+    align-content: center;
+}
+.navigationarea{
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--palette-7);
+}
+.areaenviar{
+    padding-top: 15px;
+    border-top: 2px solid var(--palette-7);
+}
+.botonenviar{
+    background-color: var(--palette-1);
+    border: 2px solid var(--palette-7);
+    padding: 7px;
+    border-radius: 12px;
+    color: var(--palette-8);
+    font-size: 1.1em;
+    box-shadow: 10px 5px 5px var(--shadow);
+}
+.botonenviar:hover{
+    font-size: 1.2em;
+    background-color: var(--palette-2);
+    border: 2px solid var(--palette-6);
+}
+#cuestionario{
+    padding-bottom: 20px;
+}
+.opcion{
+    cursor: pointer;
+    background-color: var(--palette-4);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    appearance: none;
+    border: 2px solid var(--palette-8);
+    box-shadow: 5px 2px 2px var(--shadow);
+}
+.opcion:checked{
+    background-image: url("checked.svg");
+    box-shadow: none;
+}
+.pregunta{
+    vertical-align: 7px;
+}
+.na{
+    color: orange;
+    font-size: .7em;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-bottom: 4px solid var(--palette-6);
+    border-left: 4px solid var(--palette-6);
+    border-right: 4px solid var(--palette-6);
+    box-shadow: 10px 5px 5px var(--shadow);
+}
+thead{
+    background-color: var(--palette-3);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+td{
+    padding: 3px;
+    border: 2px solid var(--palette-6);
+    font-size: 1.1em;
+}
+caption{
+    padding: 3px;
+    background-color: var(--palette-3);
+    border-top: 4px solid var(--palette-6);
+    border-left: 4px solid var(--palette-6);
+    border-right: 4px solid var(--palette-6);
+    font-size: 1.3em;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px var(--shadow);
+}
+abbr::after{
+    content: "🔍";
+    font-size: 10px;
+    vertical-align: 5px;
+}
+abbr{
+    border: 1px solid var(--palette-6);
+    padding: 2px;
+    text-decoration: none;
+}
+abbr:hover{
+    cursor: help;
+}
+.fuente{
+    text-decoration: none;
+    padding: 2px;
+    color: var(--palette-8);
+    border: 1px solid var(--palette-8);
+    vertical-align: 5px;
+    font-size: 1.2em;
+    padding-right: 5px;
+}
+.fuente::before{
+    content: "🌐";
+}
+#NotaAsperger{
+    padding: 3px;
+    font-size: .9em;
+    width: 20%;
+    border-radius: 10px;
+    background: linear-gradient(var(--palette-3) 25%, var(--palette-1) 25%);
+    border: 2px solid var(--palette-6);
+    height: fit-content;
+}
